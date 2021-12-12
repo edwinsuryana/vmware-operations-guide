@@ -6,7 +6,7 @@
     <meta name=generator content="Hugo 0.85.0">
     <meta name=description content>
     <link rel=icon href=/vmware-operations-guide/images/favicon.png type=image/png>
-    <title>Demo :: VMware Operations Guide</title>
+    <title>Horizon :: VMware Operations Guide</title>
     <link href=/vmware-operations-guide/css/clr-ui.min.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/fontawesome-all.min.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/featherlight.min.css?1634458076 rel=stylesheet>
@@ -14,9 +14,24 @@
     <link href=/vmware-operations-guide/css/auto-complete.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/clarity-theme.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/jquery.dataTables.min.css?1634458076 rel=stylesheet>
+    <link href="https://cdn.datatables.net/colvis/1.1.2/css/dataTables.colVis.css" rel=stylesheet>
     <link href=/vmware-operations-guide/css/hugo-theme.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/theme.css?1634458076 rel=stylesheet>
     <link href=/vmware-operations-guide/css/top-table.css?1634458076 rel=stylesheet>
+    <link href="https://phpcoder.tech/multiselect/css/jquery.multiselect.css" rel=stylesheet>
+
+    <style>
+        th {
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            border-right: 1px solid #dddddd;
+        }
+
+        th:first-child {
+            border-left: 1px solid #dddddd;
+        }
+    </style>
+
     <script src=/vmware-operations-guide/js/jquery-3.3.1.min.js?1634458076></script>
 	<link href=/vmware-operations-guide/css/custom-navigation.css rel=stylesheet>
 	<script src=/vmware-operations-guide/js/custom-navigation.js></script>
@@ -29,7 +44,7 @@
 
     gtag('js', new Date), gtag('config', 'G-4E70Q7EBYT')</script>
 </head>
-<body data-url=/vmware-operations-guide/demo/>
+<body data-url=/vmware-operations-guide/demo/datatable/>
 <div class=main-container>
     <header class=header-6>
         <div class=branding><a href=/vmware-operations-guide/ class=nav-link>
@@ -70,40 +85,71 @@
                     <div>
                         <div id=top-bar>
                             <div id=top-github-link><a class=github-link title="Edit this page"
-                                                       href=https://github.com/TheNewStellW/vmware-operations-guide/tree/main/content/Demo/_index.md
+                                                       href=https://github.com/TheNewStellW/vmware-operations-guide/tree/main/content/Demo/Datatable/_index.md
                                                        target=blank><i class="fas fa-code-branch"></i>
                                 <span id=top-github-link-text>Edit this page</span></a></div>
                             <div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb><span
                                     id=sidebar-toggle-span><a href=# id=sidebar-toggle data-sidebar-toggle><i
                                     class="fas fa-bars"></i></a></span>
-                                <span class=links><a
-                                        href=/vmware-operations-guide/>VMware Operations Guide</a> > Demo</span></div>
+                                <span class=links><a href=/vmware-operations-guide/>VMware Operations Guide</a> > <a
+                                        href=/vmware-operations-guide/demo/>Demo</a> > Horizon</span></div>
                         </div>
                     </div>
                     <div id=head-tags></div>
-                    <div id=body-inner><h1>Demo</h1>
-                        <ul class="children children-li">
-                            <li><a href=/vmware-operations-guide/demo/horizon/>Horizon</a></li>
-                            <li><a href=/vmware-operations-guide/demo/esxtop/>Esxtop</a></li>
-                        </ul>
+                    <div id=body-inner><h1>Horizon</h1>
+                        <p>
+                            Here are all the metrics and properties that come with vRealize Operations Management Pack for Horizon (MP4H 2.0).
+                            <br/><br/>
+                            How to use this dynamic table:
+                            <br/>
+                        <ol>
+                            <li>To hide column, do this.</li>
+                            <li>To filter based on specific value of a column do this.</li>
+                            <li>To filter based on any column, use the search box.</li>
+                            <li>Note: no 2 and 3 work together as join filter.</li>
+                            <li>To sort by any column, click on it.</li>
+                            <li>To sort multiple column, press shift then click any column.</li>
+                        </ol>
+                        </p>
+                        <table id=dataTables class=datatable style="min-width: 1000px;">
+                            <thead>
+                            <tr>
+                                <th>Object</th>
+                                <th>Purpose</th>
+                                <th>Type</th>
+                                <th>Metric Group</th>
+                                <th>Name</th>
+                                <th>Unit</th>
+                                <th>Tool tips</th>
+                            </tr>
+                            <tr>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                                <th class=th_filter></th>
+                            </tr>
+                            </thead>
+                        </table>
                         <div class="navigation-buttons clr-row">
                             <div class="clr-col nav-prev"><a class=nav-prev
-                                                             href=/vmware-operations-guide/downloads/ops-your-world/ title="Operationalize
-                                                             Your World"><i class="fa fa-chevron-left"></i></a></div>
+                                                             href=/vmware-operations-guide/demo/ title=Demo><i
+                                    class="fa fa-chevron-left"></i></a></div>
                             <div class="clr-col nav-next"><a class=nav-next
-                                                             href=/vmware-operations-guide/demo/datatable/ title=Datatable><i
-                                    class="fa fa-chevron-right"></i></a></div>
+                                                             href=/vmware-operations-guide/demo/toptable/ title="Top
+                                                             Table"><i class="fa fa-chevron-right"></i></a></div>
                         </div>
                         <hr>
                         This page was last updated on October 17, 2021 by Vinay Vivekananda
                         with commit message: "enable gh-pages for demo"
                     </div>
                 </div>
-                <div id=navigation><a class="nav nav-prev"
-                                      href=/vmware-operations-guide/downloads/ops-your-world/ title="Operationalize Your
-                                      World"><i class="fa fa-chevron-left"></i></a>
-                    <a class="nav nav-next" href=/vmware-operations-guide/demo/datatable/ title=Datatable
-                       style=margin-right:0><i class="fa fa-chevron-right"></i></a></div>
+                <div id=navigation><a class="nav nav-prev" href=/vmware-operations-guide/demo/ title=Demo><i
+                        class="fa fa-chevron-left"></i></a>
+                    <a class="nav nav-next" href=/vmware-operations-guide/demo/toptable/ title="Top Table"
+                    style=margin-right:0><i class="fa fa-chevron-right"></i></a></div>
             </section>
             <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
                 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
@@ -1260,11 +1306,10 @@
                             Your World</a></li></ul>
                     </li>
                     <li data-nav-id=/vmware-operations-guide/demo/ title=Demo class="dd-item
-parent
-active"><a href=/vmware-operations-guide/demo/ class="nav-link active"><i class="fas fa-bug"></i> Demo</a>
+parent"><a href=/vmware-operations-guide/demo/ class=nav-link><i class="fas fa-bug"></i> Demo</a>
                         <ul class=nav-list>
                             <li data-nav-id=/vmware-operations-guide/demo/horizon/ title=Horizon class=dd-item><a
-                                    href=/vmware-operations-guide/demo/horizon/ class=nav-link>Horizon</a></li>
+                                    href=/vmware-operations-guide/demo/horizon/ class="nav-link active">Horizon</a></li>
                             <li data-nav-id=/vmware-operations-guide/demo/esxtop/ title="Esxtop" class="dd-item
                             parent
                             active"><a href=/vmware-operations-guide/demo/esxtop/ class="nav-link">Esxtop</a></li></ul>
@@ -1284,7 +1329,8 @@ active"><a href=/vmware-operations-guide/demo/ class="nav-link active"><i class=
                         <li><a class=padding>
                             <div class=clr-select-wrapper><i class="fas fa-language fa-fw"></i>
                                 <select class=clr-select id=select-language onchange="location=this.value">
-                                    <option id=en value=/vmware-operations-guide/demo/ selected>English</option>
+                                    <option id=en value=/vmware-operations-guide/demo/datatable/ selected>English
+                                    </option>
                                 </select></div>
                         </a></li>
                     </ul>
@@ -1323,29 +1369,108 @@ active"><a href=/vmware-operations-guide/demo/ class="nav-link active"><i class=
 <script src=/vmware-operations-guide/js/learn.js?1634458076></script>
 <script src=/vmware-operations-guide/js/hugo-learn.js?1634458076></script>
 <script src=/vmware-operations-guide/js/jquery.dataTables.min.js?1634458076></script>
+<script src="https://cdn.datatables.net/colvis/1.1.2/js/dataTables.colVis.js"></script>
 <script src=/vmware-operations-guide/js/datatable.js?1634458076></script>
+<script src="https://phpcoder.tech/multiselect/js/jquery.multiselect.js"></script>
 <script type=text/javascript src=/vmware-operations-guide/js/lunr.min.js?1634458076></script>
 <script type=text/javascript src=/vmware-operations-guide/js/auto-complete.js?1634458076></script>
 <script type=text/javascript>var baseurl = "/vmware-operations-guide/"</script>
 <script type=text/javascript src=/vmware-operations-guide/js/search.js?1634458076></script>
 <script src=/vmware-operations-guide/mermaid/mermaid.js?1634458076></script>
 <script>mermaid.initialize({startOnLoad: !0})</script>
-<script>$(document).ready(function () {
-    $('a[href]').click(function () {
-        let a = $(this).attr('href');
-        if (a && a.length > 0 && a.charAt(0) === '#') {
-            a = a.replace(':', '\\:');
-            let b = $(a);
-            if (b && b.length) {
-                let a = b[0].offsetTop;
-                if (a) {
-                    let b = a;
-                    top && $('.content-area').animate({scrollTop: b}, 1e3)
+<script>
+    function viewTable() {
+        $('#dataTables').DataTable().destroy();
+        var dataTable = $('#dataTables').DataTable({
+            responsive: false,
+            processing: true,
+            paging: true,
+            ordering: true,
+            orderCellsTop: true,
+            ajax: '/vmware-operations-guide/files/json/test.json',
+            columns: [
+                { 'data': 'Object' },
+                { 'data': 'Purpose' },
+                { 'data': 'Type' },
+                { 'data': 'Metric Group' },
+                { 'data': 'Name' },
+                { 'data': 'Unit' },
+                { 'data': 'Tool tips' }
+            ],
+            columnDefs: [
+                {
+                    targets: [0,1,2,3,4,5,6],
+                    className: 'dt-body-left'
+                }
+            ],
+            initComplete: function () {
+                this.api().columns().every( function () {
+                    var column = this;
+                    var title = $(this.header()).html().replace(/[\W]/g, '-');
+
+                    var select = $('<select name="' + title + '[]" multiple id="' + title + '"></select>')
+                        .appendTo($("#dataTables thead tr:eq(1) th").eq(column.index()).empty())
+                        .on('change', function () {
+                            var data = $.map($(this).val(), function(value, key) {
+                                return value ? '^' + $.fn.dataTable.util.escapeRegex(value) + '$' : null;
+                            });
+
+                            if (data.length === 0) {
+                                data = [""];
+                            }
+
+                            var val = data.join('|');
+
+                            column
+                                .search( val ? val : '', true, false )
+                                .draw();
+                        });
+
+                    column.data().unique().sort().each(function (d, j) {
+                        select.append( '<option value="'+d+'">'+d+'</option>');
+                    });
+
+                    $('#'+title).multiselect({
+                        columns: 1,
+                        placeholder: 'Search',
+                        search: true,
+                        selectAll: true
+                    });
+                });
+
+                $("#body ul").attr('style', 'margin-left: unset !important');
+                $(".ms-options-wrap > .ms-options > ul label").attr('style', 'padding: 1px 0px 2px 23px !important; font-size: 10px;');
+
+                $("#dataTables").wrap("<div style='overflow:auto; width:100%;'></div>");
+            }
+        });
+
+        $('.th_filter').removeClass('sorting_asc');
+
+        var colvis = new $.fn.dataTable.ColVis( dataTable );
+        $( colvis.button() ).insertAfter('div.dataTables_filter label');
+        $(".ColVis_Button").css({"height":"36px","margin-left":"5px"});
+    }
+
+    $(document).ready(function () {
+        viewTable();
+
+        $('a[href]').click(function () {
+            let a = $(this).attr('href');
+            if (a && a.length > 0 && a.charAt(0) === '#') {
+                a = a.replace(':', '\\:');
+                let b = $(a);
+                if (b && b.length) {
+                    let a = b[0].offsetTop;
+                    if (a) {
+                        let b = a;
+                        top && $('.content-area').animate({scrollTop: b}, 1e3)
+                    }
                 }
             }
-        }
-    })
-})</script>
+        });
+    });
+</script>
 <p style="text-align:center;font-size:.6rem!important;margin:0;padding:.5rem 0;background-color:#f2f2f2">VMware and the
     VMware taglines, logos and product names are trademarks or registered trademarks of VMware in the U.S. and other
     countries.</p></body>
