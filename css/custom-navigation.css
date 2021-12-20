@@ -1,4 +1,24 @@
-.treeview, .treeview ul { 
+#sidebar ul.topics {
+	margin: 1rem;
+	margin-right: 0;
+	margin-left: 0 !important;
+}
+#sidebar ul li li {
+
+}
+
+#sidebar ul.topics > li ul > li > ul li a {
+	margin: 0 !important;
+}
+
+#sidebar ul.topics > li ul > li > a {
+	position: relative;
+	bottom: 9px;
+	left: 10px;
+}
+
+
+.treeview, .treeview ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -13,9 +33,11 @@
 	background: url(images/treeview-default.gif) -64px -25px no-repeat;
 	height: 16px;
 	width: 16px;
-	margin-left: -16px;
+	margin-left: -20px;
 	float: left;
 	cursor: pointer;
+	position: relative;
+	left: 17px;
 }
 /* fix for IE6 */
 * html .hitarea {
@@ -37,14 +59,14 @@
 .treeview .hover { color: red; cursor: pointer; }
 
 .treeview li { background: url(images/treeview-default-line.gif) 0 0 no-repeat; }
-.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 17px -176px; }
 
 .treeview .expandable-hitarea { background-position: -80px -3px; }
 
-.treeview li.last { background-position: 0 -1766px }
+.treeview li.last { background-position: 0 -1766px; background-position-x: 15px; }
 .treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/treeview-default.gif); }  
-.treeview li.lastCollapsable { background-position: 0 -111px }
-.treeview li.lastExpandable { background-position: -32px -67px }
+.treeview li.lastCollapsable { background-position: 17px -111px }
+.treeview li.lastExpandable { background-position: -15px -68px; height: 15px }
 
 .treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
 
@@ -52,6 +74,7 @@
 .treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url(images/treeview-red.gif); } 
 
 .treeview-black li { background-image: url(images/treeview-black-line.gif); }
+.treeview-black li li { background-image: url(images/treeview-default-line.gif); background-position-x: 15px; }
 .treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url(images/treeview-black.gif); }  
 
 .treeview-gray li { background-image: url(images/treeview-gray-line.gif); }
