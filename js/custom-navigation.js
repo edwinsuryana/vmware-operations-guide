@@ -183,7 +183,7 @@
 			}
 			
 			// add treeview class to activate styles
-			this.addClass("treeview");
+			this.addClass("treeview").addClass('treeview-black');
 			
 			// prepare branches and find all tree items with child lists
 			var branches = this.find("li").prepareBranches(settings);
