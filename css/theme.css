@@ -164,23 +164,6 @@ th {
   margin: 1rem;
   margin-right: 0;
 }
-
-#sidebar ul.topics > li > a {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin: 10px;
-}
-
-#sidebar ul.topics > li ul > li > a {
-  font-size: 1em;
-  margin: 3px;
-}
-
-#sidebar ul.topics > li ul > li > ul li a {
-  font-size: 0.8em;
-  margin: 3px;
-}
-
 #sidebar ul.topics.searched ul {
   display: block;
 }
